@@ -1,0 +1,172 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 520089900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I open the swaglab application",
+            "match": {
+              "location": "ProductSteps.i_open_the_swaglab_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 432823200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I enter username \"standard_user\" and password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 18
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 47
+                }
+              ],
+              "location": "ProductSteps.i_enter_username_something_and_password_something(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 188043300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Click on Login button",
+            "match": {
+              "location": "ProductSteps.click_on_login_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-01T23:58:26.959Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2610108400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.setUp()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Update the product to the cart",
+        "description": "",
+        "id": "product-should-be-added-to-the-cart;update-the-product-to-the-cart;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 2527289900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2230618300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I am in Product page",
+            "match": {
+              "location": "ProductSteps.i_am_in_product_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3114641800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click on Add to cart for one item \"Sauce Labs Backpack\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sauce Labs Backpack",
+                  "offset": 37
+                }
+              ],
+              "location": "ProductSteps.i_click_on_add_to_cart_for_one_item_something(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2077605200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "navigate to Mycart",
+            "match": {
+              "location": "ProductSteps.navigate_to_mycart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2107860100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "again remove the same item",
+            "match": {
+              "location": "ProductSteps.again_remove_the_same_item()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3089010000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I can view the final selected product",
+            "match": {
+              "location": "ProductSteps.i_can_view_the_final_selected_product()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ProductFeature"
+          }
+        ]
+      }
+    ],
+    "name": "Product should be added to the cart",
+    "description": "",
+    "id": "product-should-be-added-to-the-cart",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Product.feature",
+    "tags": []
+  }
+]
